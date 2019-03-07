@@ -205,9 +205,7 @@ There is NO WARRANTY, to the extent permitted by law.\n\
   exit(EXIT_SUCCESS);
 }
 
-static int print_one (unsigned int namescount, const char * const * names,
-                      void* data)
-{
+static int print_one (size_t namescount, const char * const * names, void* data) {
   unsigned int i;
   (void)data;
   for (i = 0; i < namescount; i++) {

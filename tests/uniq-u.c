@@ -137,7 +137,7 @@ freebuffer (struct linebuffer *linebuffer)
    but rather to the beginnings of the fields to compare.
    OLDLEN and NEWLEN are their lengths. */
 
-static int
+static size_t
 different (const char *old, const char *new, size_t oldlen, size_t newlen)
 {
   int order;

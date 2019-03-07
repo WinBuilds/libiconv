@@ -41,6 +41,7 @@ _GL_INLINE_HEADER_BEGIN
 #  include <io.h> /* declares setmode() */
 #  define set_binary_mode setmode
 # else
+#  include <corecrt_io.h>
 #  define set_binary_mode _setmode
 #  undef fileno
 #  define fileno _fileno
